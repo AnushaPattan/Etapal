@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0FFE636B-A953-4338-8020-B804862F271C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EtapalReq</RootNamespace>
+    <AssemblyName>EtapalReq</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>EtapalReq.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp, Version=5.5.10.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.10\lib\itextsharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NetISMAPI">
+      <HintPath>..\..\..\..\..\..\New folder (3)\NetISMAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="NetISMConverter">
+      <HintPath>..\..\..\..\..\..\New folder (3)\NetISMConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnicodeConv_Bhoomi">
+      <HintPath>..\..\..\..\..\..\UnicodeConv_Bhoomi\UnicodeConv_Bhoomi.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CaseSecSubSec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CaseSecSubSec.Designer.cs">
+      <DependentUpon>CaseSecSubSec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CaseWorker_IN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CaseWorker_IN.Designer.cs">
+      <DependentUpon>CaseWorker_IN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeCaseWorker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeCaseWorker.Designer.cs">
+      <DependentUpon>ChangeCaseWorker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CourtCaseLetter_IN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CourtCaseLetter_IN.Designer.cs">
+      <DependentUpon>CourtCaseLetter_IN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DateWise_IN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DateWise_IN.Designer.cs">
+      <DependentUpon>DateWise_IN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Department_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Department_Add.Designer.cs">
+      <DependentUpon>Department_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeptAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeptAdd.Designer.cs">
+      <DependentUpon>DeptAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DGVPrinter.cs" />
+    <Compile Include="EditCourtCaseLetter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditCourtCaseLetter.Designer.cs">
+      <DependentUpon>EditCourtCaseLetter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditGovtLetter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditGovtLetter.Designer.cs">
+      <DependentUpon>EditGovtLetter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GovtLetters_IN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GovtLetters_IN.Designer.cs">
+      <DependentUpon>GovtLetters_IN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NativeMethods.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Report_IN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report_IN.Designer.cs">
+      <DependentUpon>Report_IN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchCourtCase_IN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchCourtCase_IN.Designer.cs">
+      <DependentUpon>SearchCourtCase_IN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchGovernment_IN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchGovernment_IN.Designer.cs">
+      <DependentUpon>SearchGovernment_IN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SectionSubsectionManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectionSubsectionManagement.Designer.cs">
+      <DependentUpon>SectionSubsectionManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManagement.Designer.cs">
+      <DependentUpon>UserManagement.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CaseSecSubSec.resx">
+      <DependentUpon>CaseSecSubSec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CaseWorker_IN.resx">
+      <DependentUpon>CaseWorker_IN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeCaseWorker.resx">
+      <DependentUpon>ChangeCaseWorker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CourtCaseLetter_IN.resx">
+      <DependentUpon>CourtCaseLetter_IN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DateWise_IN.resx">
+      <DependentUpon>DateWise_IN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Department_Add.resx">
+      <DependentUpon>Department_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeptAdd.resx">
+      <DependentUpon>DeptAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditCourtCaseLetter.resx">
+      <DependentUpon>EditCourtCaseLetter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditGovtLetter.resx">
+      <DependentUpon>EditGovtLetter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GovtLetters_IN.resx">
+      <DependentUpon>GovtLetters_IN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_IN.resx">
+      <DependentUpon>Report_IN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchCourtCase_IN.resx">
+      <DependentUpon>SearchCourtCase_IN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchGovernment_IN.resx">
+      <DependentUpon>SearchGovernment_IN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectionSubsectionManagement.resx">
+      <DependentUpon>SectionSubsectionManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManagement.resx">
+      <DependentUpon>UserManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\E1-F.png" />
+    <Content Include="Images\Etapal.png" />
+    <Content Include="Images\Etapalword.png" />
+    <Content Include="Images\Home photo.png" />
+    <Content Include="Images\vs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

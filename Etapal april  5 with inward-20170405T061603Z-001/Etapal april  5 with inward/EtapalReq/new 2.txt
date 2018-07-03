@@ -1,0 +1,257 @@
+Question 1: What is ASP.NET?
+
+Answer: 
+ASP.NET was developed in direct response to the problems that developers had with classic ASP.
+ Since ASP is in such wide use, however, Microsoft ensured that ASP scripts execute without modification
+ on a machine with the .NET Framework (the ASP engine, ASP.DLL, is not modified when installing the 
+ .NET Framework). Thus, IIS can house both ASP and ASP.NET scripts on the same machine.
+
+Advantages of ASP.NET
+
+Separation of Code from HTML: 
+
+To make a clean sweep, with ASP.NET you have the ability to completely separate layout and business logic.
+ This makes it much easier for teams of programmers and designers to collaborate efficiently.
+
+Support for compiled languages: 
+
+Developer can use VB.NET and access features such as strong typing and object-oriented programming. Using compiled languages also means that ASP.NET pages do not suffer the performance penalties associated with interpreted code. ASP.NET pages are precompiled to byte-code and Just In Time (JIT) compiled when first requested. Subsequent requests are directed to the fully compiled code, which is cached until the source changes.
+
+Use services provided by the .NET Framework: 
+
+The .NET Framework provides class libraries that can be used by your application. Some of the key classes help you with input/output, access to operating system services, data access, or even debugging. We will go into more detail on some of them in this module.
+
+Graphical Development Environment: 
+
+Visual Studio .NET provides a very rich development environment for web developers. You can drag and drop controls and set properties the way you do in Visual Basic 6. And you have full IntelliSense support, not only for your code, but also for HTML and XML.
+
+State management: 
+
+To refer to the problems mentioned before, ASP.NET provides solutions for session and application state management. State information can, for example, be kept in memory or stored in a database. It can be shared across web farms, and state information can be recovered, even if the server fails or the connection breaks down.
+
+Update files while the server is running: 
+
+Components of your application can be updated while the server is online and clients are connected. The framework will use the new files as soon as they are copied to the application. Removed or old files that are still in use are kept in memory until the clients have finished.
+
+XML-Based Configuration Files: 
+
+Configuration settings in ASP.NET are stored in XML files that you can easily read and edit. You can also easily copy these to another server, along with the other files that comprise your application.
+ASP.NET Overview
+
+Here are some points that give the quick overview of ASP.NET.
+
+ASP.NET provides services to allow the creation, deployment, and execution of Web Applications and Web Services.
+
+Like ASP, ASP.NET is a server-side technology.
+
+Web Applications are built using Web Forms. ASP.NET comes with built-in Web Forms controls, which are responsible for generating the user interface. They mirror typical HTML widgets like text boxes or buttons. If these controls do not fit your needs, you are free to create your own user controls.
+
+Web Forms are designed to make building web-based applications as easy as building Visual Basic applications.
+For further information click on the link:
+
+Introduction to ASP.NET
+Question 2: What are the different validators in ASP.NET?
+
+Answer: ASP.NET validation controls define an important role in validating the user input data. Whenever the user gives the input, it must always be validated before sending it across to various layers of an application. If we get the user input with validation, then chances are that we are sending the wrong data. So, validation is a good idea to do whenever we are taking input from the user.
+
+There are the following two types of validation in ASP.NET:
+
+Client-Side Validation
+Server-Side Validation
+Client-Side Validation:
+
+When validation is done on the client browser, then it is known as Client-Side Validation. We use JavaScript to do the Client-Side Validation.
+
+Server-Side Validation:
+
+When validation occurs on the server, then it is known as Server-Side Validation. Server-Side Validation is a secure form of validation. The main advantage of Server-Side Validation is if the user somehow bypasses the Client-Side Validation, we can still catch the problem on server-side.
+
+The following are the Validation Controls in ASP.NET:
+
+RequiredFieldValidator Control
+CompareValidator Control
+RangeValidator Control
+RegularExpressionValidator Control
+CustomFieldValidator Control
+ValidationSummary
+For further information click on the link:
+
+Validation Controls in ASP.Net
+Question 3: What is View State?
+
+Answer: View State is the method to preserve the Value of the Page and Controls between round trips. It is a Page-Level State Management technique. View State is turned on by default and normally serializes the data in every control on the page regardless of whether it is actually used during a post-back. 
+
+A web application is stateless. That means that a new instance of a page is created every time when we make a request to the server to get the page and after the round trip our page has been lost immediately
+
+Features of View State
+
+These are the main features of view state:
+Retains the value of the Control after post-back without using a session.
+Stores the value of Pages and Control Properties defined in the page.
+Creates a custom View State Provider that lets you store View State Information in a SQL Server Database or in another data store.
+Advantages of View State
+
+Easy to Implement.
+No server resources are required: The View State is contained in a structure within the page load.
+Enhanced security features: It can be encoded and compressed or Unicode implementation.
+For further information click on the link:
+
+What is View State and How it Works in ASP.NET
+Question 4: What are the different Session state management options available in ASP.NET?
+
+Answer: State Management in ASP.NET
+
+A new instance of the Web page class is created each time the page is posted to the server.
+
+In traditional Web programming, all information that is associated with the page, along with the controls on the page, would be lost with each roundtrip.
+
+The Microsoft ASP.NET framework includes several options to help you preserve data on both a per-page basis and an application-wide basis. 
+These options can be broadly divided into the following two categories: 
+
+Client-Side State Management Options
+Server-Side State Management Options
+Client-Side State Management
+
+Client-based options involve storing information either in the page or on the client computer.
+
+Some client-based state management options are:
+
+Hidden fields
+View state
+Cookies
+Query strings
+Server-Side State Management
+
+There are situations where you need to store the state information on the server side.
+
+Server-side state management enables you to manage application-related and session-related information on the server.
+
+ASP.NET provides the following options to manage state at the server side:
+
+Application state
+Session state
+State Management
+
+For further information click on the link:
+
+State Management in ASP.Net
+Question 5: What is caching in ASP.NET?
+
+Answer: Caching is one of the most interesting concept and operation in ASP.NET. If you can handle it, you can run any web application by applying the caching concept depending on the requirements.
+
+Caching is for providing solutions or the results to the users depending on their request, admin needs to recreate the pages often depending on user requests…STOP!!! "A cache simply stores the output generated by a page in the memory and this saved output (cache) will serve us (users) in the future.".
+
+Types
+
+caching  
+
+For further information click on the link:
+
+Caching in ASP.Net
+Question 6: How can we apply themes in ASP.NET application?
+
+Answer: A theme is a collection of settings that define the look of controls and web pages. These themes are applied across all the pages in a web application to maintain a consistent appearance. Themes are included images and skin files; the skin files set the visual properties of ASP.NET controls. Themes are of two types:
+
+Page Theme
+
+A Page theme contains the control skins, style sheets, graphic files, and other resources inside the subfolder of the App_Theme folder in the Solution Explorer window. A page theme is applied to a single page of the web site. 
+
+Global Theme
+
+A Global theme is a theme that is applied to all the web sites on a web server and includes property settings, and graphics. This theme allows us to maintain all the websites on the same web server and define the same style for all the web pages of the web sites.
+
+Global Theme
+
+For further information click on the link:
+
+Creating Web Application Using Themes in ASP.NET
+Question 7: What is MVC?
+
+Answer: Model-View-Controller (MVC) is a pattern to separate an application into the following three main components:
+
+Model
+View
+Controller
+The ASP.NET MVC framework provides an alternative to the ASP.NET Web Forms pattern for creating web applications. The ASP.NET MVC Framework is a lightweight, highly testable presentation framework that (as with Web Forms-based applications) is integrated with existing ASP.NET features, such as master pages and membership-based authentications. The MVC framework is defined in the System.Web.Mvc assembly. It provides full control over HTML, JavaScript and CSS. It's the better as well as a recommended approach for large-scale applications where various teams are working together.
+
+MVC  
+
+The ASP.NET MVC framework offers the following advantages:
+
+It makes it very easy to manage complexity by dividing an application into the Model, View and Controller.
+It does not use view state or server-based forms.
+Full control over HTML, JavaScript and CSS.
+It provides better support for Test-Driven Development (TDD).
+It works well for Web applications that are supported by large teams of developers and for web designers who need a high degree of control over the application behaviour.
+By default support of Facebook and Google Authentication.
+It easy to manage a large application to divide in multiple areas.
+For further information click on the link:
+
+Getting Started With ASP.Net MVC
+Question 8: What are Cookies in ASP.NET?
+
+Answer: Cookies are a State Management Technique that can store the values of control after a post-back. Cookies can store user-specific Information on the client's machine like when the user last visited your site. Cookies are also known by many names, such as HTTP Cookies, Browser Cookies, Web Cookies, Session Cookies and so on. Basically cookies are a small text file sent by the web server and saved by the Web Browser on the client's machine.
+
+List of properties containing the HttpCookies Class:
+
+Domain: Using these properties we can set the domain of the cookie.
+Expires: This property sets the Expiration time of the cookies.
+HasKeys: If the cookies have a subkey then it returns True.
+Name: Contains the name of the Key.
+Path: Contains the Virtual Path to be submitted with the Cookies.
+Secured: If the cookies are to be passed in a secure connection then it only returns True.
+Value: Contains the value of the cookies.
+Limitation of the Cookies
+
+The size of cookies is limited to 4096 bytes.
+A total of 20 cookies can be used in a single website.
+For further info click on the link:
+
+Introduction To Cookies in ASP.Net
+Question 9: What is Ajax in ASP.NET?
+
+Answer. Ajax stands for Asynchronous JavaScript and XML; in other words Ajax is the combination of various technologies such as a JavaScript, CSS, XHTML, DOM, etc.
+
+AJAX allows web pages to be updated asynchronously by exchanging small amounts of data with the server behind the scenes. This means that it is possible to update parts of a web page, without reloading the entire page.
+
+We can also define Ajax is a combination of client side technologies that provides asynchronous communication between the user interface and the web server so that partial page rendering occurs instead of complete page post back.
+
+Ajax is platform-independent; in other words AJAX is a cross-platform technology that can be used on any Operating System since it is based on XML & JavaScript. It also supports open source implementation of other technology. It partially renders the page to the server instead of complete page post back. We use AJAX for developing faster, better and more interactive web applications. AJAX uses a HTTP request between web server & browser.
+
+With AJAX, when a user clicks a button, you can use JavaScript and DHTML to immediately update the UI, and spawn an asynchronous request to the server to fetch results. 
+
+When the response is generated, you can then use JavaScript and CSS to update your UI accordingly without refreshing the entire page. While this is happening, the form on the users screen doesn't flash, blink, disappear, or stall. 
+
+The power of AJAX lies in its ability to communicate with the server asynchronously, using a XMLHttpRequest object without requiring a browser refresh. 
+
+Ajax essentially puts JavaScript technology and the XMLHttpRequest object between your Web form and the server.
+For further info click on the link:
+
+Introduction to Ajax and Ajax Control Toolkit
+Question 10: What are Web Services in ASP.NET?
+
+Answer: A Web Service is a software program that uses XML to exchange information with other software via common internet protocols. In a simple sense, Web Services are a way for interacting with objects over the Internet.
+
+A web service is:
+
+Language Independent.
+Protocol Independent.
+Platform Independent.
+It assumes a stateless service architecture.
+Scalable (e.g. multiplying two numbers together to an entire customer-relationship management system).
+Programmable (encapsulates a task).
+Based on XML (open, text-based standard).
+Self-describing (metadata for access and use).
+Discoverable (search and locate in registries)- ability of applications and developers to search for and locate desired Web services through registries. This is based on UDDI.
+Key Web Service Technologies:
+
+XML- Describes only data. So, any application that understands XML-regardless of the application's programming language or platform-has the ability to format XML in a variety of ways (well-formed or valid).
+SOAP- Provides a communication mechanism between services and applications.
+WSDL- Offers a uniform method of describing web services to other programs.
+UDDI- Enables the creation of searchable Web services registries.
+UDDI
+
+For further info click on the link:
+
+ASP.NET Web Service Basics
+Question 11: What are the Advantages of ASP.NET?
